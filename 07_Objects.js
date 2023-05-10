@@ -3,9 +3,29 @@ let person = {
     lastName : 'Doe'
 }
 
-console.log(typeof person);
-console.log(person);
-console.log(person.firstName);
+console.log(typeof person);             // object
+console.log(person);                    // { firstName: 'Joe', lastName: 'Doe' }
+console.log(person.firstName);          // Joe
+
+
+console.log("----------------------------------");
+
+
+// add new property to object
+person.age = 30;
+console.log(person);                    // { firstName: 'Joe', lastName: 'Doe', age: 30 }
+
+
+console.log("----------------------------------");
+
+
+// delete a property
+delete person.age;
+console.log(person);                        // { firstName: 'Joe', lastName: 'Doe' }
+
+
+console.log("----------------------------------");
+
 
 let address = {
     'building no' : 5555,
@@ -13,20 +33,20 @@ let address = {
     state : 'Kentucky'
 }
 
-console.log(address);
-console.log(address['building no']);
-console.log(address['street']);
+console.log(address);                       // { 'building no': 5555, street: 'Keowee', state: 'Kentucky' }
+console.log(address['building no']);        // 5555
+console.log(address['street']);             // Keowee
+console.log(address.state);                 // Kentucky
 
-// add new property to object
-person.age = 30;
-console.log(person);// { firstName: 'Joe', lastName: 'Doe', age: 30 }
 
-// delete a property
-delete person.age;
-console.log(person);// { firstName: 'Joe', lastName: 'Doe' }
+console.log("----------------------------------");
 
 // check a property if it exists
-console.log('street' in address); // true
+console.log('street' in address);           // true
+
+
+console.log("----------------------------------");
+
 
 // you can put arrays inside objects
 let course = {
@@ -39,7 +59,7 @@ console.log(course);
 
 // loop using keys of the object
 for (let key in course) {
-   console.log(key+" : "+course[key]);
+   console.log(key+" : " + course[key]);
 }
 
 // value which was array turned into string = Objects,Arrays,Functions,Live Server

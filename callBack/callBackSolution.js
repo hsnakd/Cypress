@@ -17,7 +17,7 @@ waitingForSomeServerToAct(functionThatNeedsBackEndData);
 
 /**
  * The first solution JS developers came up with was this callBack situation
- * ES6 -- promises handles async nature of JS
+ * ES6  --- promises handles async nature of JS
  * 2017 --- async functions, await keyword
  * What is a callBack Hell?
  * What is async code what is sync code?
