@@ -38,9 +38,6 @@ console.log(address['building no']);        // 5555
 console.log(address['street']);             // Keowee
 console.log(address.state);                 // Kentucky
 
-
-console.log("----------------------------------");
-
 // check a property if it exists
 console.log('street' in address);           // true
 
@@ -55,6 +52,13 @@ let course = {
     subjects : ['Objects','Arrays','Functions','Live Server']
 }
 console.log(course);
+/*
+        {
+        name: 'JS',
+        url: 'www.cydeo.com',
+        subjects: [ 'Objects', 'Arrays', 'Functions', 'Live Server' ]
+        }
+*/
 
 
 // loop using keys of the object

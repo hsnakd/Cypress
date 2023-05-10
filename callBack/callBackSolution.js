@@ -25,7 +25,7 @@ waitingForSomeServerToAct(functionThatNeedsBackEndData);
 
 // alert("This is a JS alert");
 /**
- * There are some JS commands like alert, prompt : these will work only in browsers with Live Server
+        *** There are some JS commands like alert, prompt : these will work only in browsers with Live Server
  */
 
 let userName = prompt("Enter your username");
