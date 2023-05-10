@@ -61,10 +61,28 @@ console.log(course);
 */
 
 
+console.log("----------------------------------");
+
+
 // loop using keys of the object
-for (let key in course) {
-   console.log(key+" : " + course[key]);
+for (let key in course) {           // forin loop
+   console.log(key + " : " + course[key]);
 }
+
+/*
+        name : JS
+        url : www.cydeo.com
+        subjects : Objects,Arrays,Functions,Live Server
+*/
+
+console.log("----------------------------------");
+
+
+console.log("URL : " + course.url + " & " + "SUBJECT : " + course.subjects);    // URL : www.cydeo.com & SUBJECT : Objects,Arrays,Functions,Live Server
+ 
+
+console.log("----------------------------------");
+
 
 // value which was array turned into string = Objects,Arrays,Functions,Live Server
 
@@ -87,6 +105,10 @@ let myCar = {
     }
 }
 
-myCar.drive(); // like in JAVA
+// like in JAVA
+myCar.drive();                      // Running on LPG
 
-console.log(myCar.extras[1]); // you are familiar with this from API testing
+// you are familiar with this from API testing
+console.log(myCar.extras);          // [ 'AC', 'Cruise Control', 'Sound Sytem' ]
+console.log(myCar.extras[1]);       // Cruise Control
+console.log(myCar.make);            // Dacia
